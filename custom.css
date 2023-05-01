@@ -5,8 +5,12 @@
 
 /*animation*/
 /*超链接*/
+a{
+  color: var(--color-primary);
+}
 article a.link{
-  text-decoration: none;}
+  text-decoration: none;
+}
 article a.link:hover{
   /*执行动画*/
   -webkit-animation:link 0.5s 1;
@@ -28,18 +32,12 @@ article a.link:hover{
 
 
 /*copy from tencent*/
-.mdui-list{cursor: pointer; opacity: 1; transition:opacity 0.3s linear;transform: translate(0px,0);}
 .mdui-list .mdui-list-item-content{ float: left; position: relative; opacity: 0.95; -webkit-transition:color 0.3s linear; transition:color 0.3s linear; z-index: 2;}
-.mdui-list .mdui-list-item-content:hover{  opacity: 1;}
 .mdui-list .mdui-list-item-content:after{ border-radius: 20px; margin-left: 35%; display:block; content:""; height: 4px; width: 30%; position: absolute; bottom: 7px; left: 0px; background-color: var(--color-primary); 
      opacity: 0; -webkit-transition: transform 0.2s ease-out,opacity 0.2s ease-out; transition: transform 0.2s ease-out,opacity 0.2s ease-out; transform-origin: 50% 0%; transform:scale(0.01,1);}
-.mdui-list .mdui-list-item-content:before{ display:none; content:""; height: 400px; width: 30%; position: absolute; bottom: 7px; background: var(--color-primary); opacity: 1;}
 .mdui-list .mdui-list-item-content:hover:after{ transform:scale(1,1); opacity: 1;}
 
 /*typesetting*/
-va-m{
-  vertical-align: middle;
-}
 ruby>rt{text-indent:0;font-size:0.6em;}
 
 
